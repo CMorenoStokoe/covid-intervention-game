@@ -97,7 +97,7 @@ function playerMadeChoice(btnElement, choice){
     $("#container-div").animate({ scrollTop: $("#container-div")[0].scrollHeight }, 1000);
 
     // Check for lose condition
-    if(covid>=100){alert('You lose! COVID-19 cases rose too high!')}
-    if(economy<=0){alert('You lose! The economy crashed too far!')}
-    if(wellbeing<=0){alert(`You lose! The public's wellbeing fell too much!`)}
+    if(covid>=100){alert('You lose! COVID-19 cases rose too high! You performed at the level of Argentina.')}
+    if(economy<=0){alert('You lose! The economy crashed too far! You performed at the level of Spain.')}
+    if(wellbeing<=0){alert(`You lose! The public's wellbeing fell too much! You performed at the level of Wales.`)}
 }
