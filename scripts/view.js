@@ -17,7 +17,7 @@ function createContainerDiv(){
     var div = document.createElement('DIV');
         div.id = 'container-div';
         div.style.height = '80vh';
-        div.className = 'card d-flex flex-column align-items-end';
+        div.className = 'd-flex flex-column align-items-end';
     document.body.appendChild(div);
 
 };
@@ -30,7 +30,7 @@ function createProgressIndicators(){
         div.id = 'progress-div';
         div.style.height = '20vh';
         div.style.padding = '2rem';
-        div.className = 'card d-flex flex-row justify-content-around';
+        div.className = 'd-flex flex-row justify-content-around';
     document.body.appendChild(div);
 
     // Add progress bars

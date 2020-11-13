@@ -20,8 +20,8 @@ var wellbeing = 50;
 window.onload = function(){
 
     // Initialise view
-    createContainerDiv(); // Container for main game interface
     createProgressIndicators(); // Progress indicators for player goals
+    createContainerDiv(); // Container for main game interface
     
     // Draw welcome message
     const welcomeMessage = `
@@ -35,7 +35,7 @@ window.onload = function(){
         the country's COVID-19 risk, economy and the wellbeing 
         of the public stay in acceptable levels.
 
-        Keep an eye on the bars at the bottom of the screen!
+        Keep an eye on the bars at the top of the screen!
 
     `
     drawTextbox(welcomeMessage, 'left', 'welcomeMessage'); 
