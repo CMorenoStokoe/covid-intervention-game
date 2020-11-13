@@ -1,0 +1,94 @@
+/* 
+
+Style
+=====
+CSS styles for app
+
+*/
+
+body{
+    font-family: raleway;
+}
+
+/* Main container div for game interface */
+#container-div{
+    padding: 5rem;
+    overflow: scroll;
+}
+
+/* Textboxes */
+p[class^='speech-bubble'] {
+    padding: 2rem; /* Padding for all speech bubbles */
+}
+
+.speech-bubble-left {
+	position: relative;
+	background: #eee;
+    border-radius: .4em;
+}
+
+.speech-bubble-left:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 0.625em solid transparent;
+	border-right-color: #eee;
+	border-left: 0;
+	margin-top: -0.625em;
+	margin-left: -0.625em;
+}
+
+.speech-bubble-right {
+	position: relative;
+	background: #25D366;
+	border-radius: .4em;
+}
+
+.speech-bubble-right:after {
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 0.625em solid transparent;
+	border-left-color: #25D366;
+	border-right: 0;
+	margin-top: -0.625em;
+	margin-right: -0.625em;
+}
+
+/* Div for goal progress bars */
+.progress{
+    margin: 0.5rem;
+}
+.progress-bar{
+    text-align: left; 
+    padding: 5px;
+    color: black;
+    font-weight: 500;
+    font-size: 1rem;
+}
+.progress-bar-vertical {
+    width: 20px;
+    min-height: 100px;
+    margin-right: 20px;
+    float: left;
+    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+    align-items: flex-end;
+    -webkit-align-items: flex-end; /* Safari 7.0+ */
+  }
+  
+  .progress-bar-vertical .progress-bar {
+    width: 100%;
+    height: 0;
+    -webkit-transition: height 0.6s ease;
+    -o-transition: height 0.6s ease;
+    transition: height 0.6s ease;
+  }
