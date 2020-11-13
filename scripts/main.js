@@ -24,10 +24,27 @@ window.onload = function(){
     createProgressIndicators(); // Progress indicators for player goals
     
     // Draw welcome message
-    drawTextbox('Welcome to a prototype COVID-19 game.', 'left', ); // Initial welcome message(s)
+    const welcomeMessage = `
+        Welcome to a COVID-19 game prototype. 
+        
+        You play as a public health officer and you 
+        will have to make choices in response to events 
+        during the COVID-19 pandemic.
 
-    // Start game
-    randomEvent();    
+        You will have to manage trade-offs to ensure that 
+        the country's COVID-19 risk, economy and the wellbeing 
+        of the public stay in acceptable levels.
+
+        Keep an eye on the bars at the bottom of the screen!
+
+    `
+    drawTextbox(welcomeMessage, 'left', 'welcomeMessage'); 
+
+    // Add start button    
+    addResponseButtons([{
+        label: 'Start!',
+        action: function(){}, 
+    }], 'welcomeMessage');
 
 }
 

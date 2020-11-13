@@ -34,7 +34,7 @@ function addResponseButtons(choices, id){
         var btn = document.createElement('BUTTON');
             btn.innerText = choice.label;
             btn.id = `${id}-choice${Math.random()}`;
-            btn.className = 'm-1 btn btn-light';
+            btn.className = 'm-2 btn btn-light';
 
         // Default actions on buttons
         $(btn).click(function(){
